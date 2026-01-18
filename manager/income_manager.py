@@ -14,3 +14,9 @@ class IncomeManager():
                 writer = csv.writer(file)
                 writer.writerow(header)  # Write the header if the file is newly created
                 print(f"Created new file: {INCOME_FILE}")
+
+    @staticmethod
+    def write_income(self, income):
+        with open(INCOME_FILE, 'w', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerow(income)
