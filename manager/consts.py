@@ -1,1 +1,0 @@
-INCOME_FILE = "./db/income.csv"

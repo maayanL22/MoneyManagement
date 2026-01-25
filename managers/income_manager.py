@@ -7,7 +7,9 @@ from consts import *
 """
 Income Manager Module - manages and handles all income actions
 """
-class IncomeManager():
+
+
+class IncomeManager:
     def __init__(self):
         self.header = {'id_column': 'id', 'date_column' :'date', 'income_column': 'income amount',
                   'description_column' : 'description'}
@@ -17,8 +19,10 @@ class IncomeManager():
         try:
             with open(self.income_file, mode='x', newline='') as file:
                 writer = csv.writer(file)
-                writer.writerow(header)  # Write the header if the file is newly created
+                writer.writerow(self.header.keys())  # Write the header if the file is newly created
                 print(f"Created new file: {self.income_file}")
+        except Exception:
+            print(f"Could not open income file")
 
     def write_income(self, income: int, date: datetime, description: str):
         with open(self.income_file, 'w', newline='') as file:
