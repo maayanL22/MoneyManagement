@@ -17,7 +17,7 @@ class OutcomeManager:
         self.current_id = 0
 
         try:
-            with open(self.income_file, mode='x', newline='') as file:
+            with open(self.outcome_file, mode='x', newline='') as file:
                 writer = csv.writer(file)
                 writer.writerow(self.header.keys())  # Write the header if the file is newly created
                 print(f"Created new file: {self.outcome_file}")
