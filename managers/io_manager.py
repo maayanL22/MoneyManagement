@@ -1,7 +1,7 @@
 import json
 import csv
 
-from consts import *
+from managers.consts import *
 
 class IOManager:
     def __init__(self):

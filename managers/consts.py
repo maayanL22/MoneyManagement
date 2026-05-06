@@ -1,9 +1,9 @@
 from enum import Enum
 
 # File paths
-INCOME_FILE = "./db/income.csv"
-OUTCOME_FILE = "./db/outcome.csv"
-
+INCOME_FILE_PATH = "./db/income.csv"
+OUTCOME_FILE_PATH = "./db/outcome.csv"
+MAIN_FILE_PATH = "./db/main.csv"
 
 # Enums
 class PaymentMethod(Enum):

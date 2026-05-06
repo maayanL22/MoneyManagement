@@ -2,7 +2,7 @@ import csv
 
 from datetime import datetime
 
-from consts import *
+from managers.consts import *
 
 """
 Income Manager Module - manages and handles all income actions
